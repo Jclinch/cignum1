@@ -819,7 +819,7 @@ export default function CignumOnePager() {
             </ul>
           </div>
 
-          <div className="bg-white/4 p-6 rounded-xl border border-white/6">
+          {/* <div className="bg-white/4 p-6 rounded-xl border border-white/6">
             <div className="font-semibold">Case Snapshot</div>
             <div className="text-sm text-white/70 mt-3">
               Transvault implemented a secure remittance pipeline with
@@ -835,7 +835,7 @@ export default function CignumOnePager() {
                 Request Demo
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 {/* Footer / Contact */}
