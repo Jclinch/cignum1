@@ -25,12 +25,40 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Smooth scroll */
+/* Smooth scrolling everywhere */
 html {
   scroll-behavior: smooth;
 }
 
-/* Prevent anchor jump under fixed header */
+/* Fix anchor scroll offset so sections don't jump under header or floating elements */
 [id] {
-  scroll-margin-top: 100px; /* adjust to your header height */
+  scroll-margin-top: 100px; /* adjust based on your header/floating badge height */
 }
+
+/* Responsive fixes */
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.875rem; /* text-3xl */
+    line-height: 2.25rem;
+  }
+  h3 {
+    font-size: 1.5rem; /* text-2xl */
+  }
+  p {
+    font-size: 0.95rem;
+  }
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+

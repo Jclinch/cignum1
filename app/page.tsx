@@ -690,8 +690,7 @@ export default function CignumOnePager() {
 
         {/* Right: Hero Visual with badge fix */}
         <section className="relative pb-32">
-          <motion.div className="rounded-2xl bg-gradient-to-br from-[var(--cignum-mid)] to-[var(--cignum-deep)] p-6 shadow-2xl">
-            <div className="flex gap-4 items-start">
+<motion.div className="rounded-2xl bg-gradient-to-br from-[var(--cignum-mid)] to-[var(--cignum-deep)] p-6 shadow-2xl relative pb-20">            <div className="flex gap-4 items-start">
               <div className="flex-1">
                 <div className="flex items-center justify-between">
                   <div>
@@ -729,8 +728,7 @@ export default function CignumOnePager() {
           </motion.div>
 
           {/* Floating badge inside padded section */}
-          <motion.div className="absolute bottom-0 bg-white/6 px-4 py-3 rounded-xl border border-white/8 shadow-lg">
-            <div className="text-xs text-white/80">Trusted by</div>
+ <motion.div className="absolute left-1/2 -bottom-6 -translate-x-1/2 bg-white/6 px-4 py-3 rounded-xl border border-white/8 shadow-lg">            <div className="text-xs text-white/80">Trusted by</div>
             <div className="flex items-center gap-4 mt-2">
               <div className="w-10 h-6 bg-white/6 rounded flex items-center justify-center text-[10px]">
                 Bank
@@ -840,56 +838,66 @@ export default function CignumOnePager() {
           </div>
         </div>
       </section>
+{/* Footer / Contact */}
+<footer id="contact" className="max-w-7xl mx-auto px-6 py-12">
+  <div className="bg-white/5 p-8 rounded-xl grid gap-10 md:grid-cols-3">
+    {/* Company Info */}
+    <div>
+      <div className="font-bold text-lg">Cignum Solutions</div>
+      <div className="text-white/70 mt-2">
+        Innovating Software. Powering Business.
+      </div>
 
-      {/* Footer / Contact */}
-      <footer id="contact" className="max-w-7xl mx-auto px-6 py-12">
-        <div className="bg-white/5 p-8 rounded-xl grid md:grid-cols-3 gap-6">
-          <div>
-            <div className="font-bold text-lg">Cignum Solutions</div>
-            <div className="text-white/70 mt-2">
-              Innovating Software. Powering Business.
-            </div>
+      <div className="mt-4 text-sm text-white/70 space-y-1">
+        <p>📍 39th Floor, One Canada Square, London E14</p>
+        <p>📞 +44 (0)203 489 0807</p>
+        <p>✉️ info@cignumsolutions.net</p>
+      </div>
+    </div>
 
-            <div className="mt-4 text-sm text-white/70">
-              📍 39th Floor, One Canada Square, London E14
-              <br />
-              📞 +44 (0)203 489 0807
-              <br />
-              ✉️ info@cignumsolutions.net
-            </div>
-          </div>
+    {/* Quick Links */}
+    <div>
+      <div className="font-semibold mb-3">Quick Links</div>
+      <div className="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 gap-2 text-white/70 text-sm">
+        <Link href="#services" className="hover:text-white transition">
+          Services
+        </Link>
+        <Link href="#why" className="hover:text-white transition">
+          Why Us
+        </Link>
+        {/* <Link href="#">Careers</Link>
+        <Link href="#">Privacy</Link> */}
+      </div>
+    </div>
 
-          <div>
-            <div className="font-semibold mb-2">Quick Links</div>
-            <div className="grid grid-cols-2 gap-2 text-white/70 text-sm">
-              <Link href="#services">Services</Link>
-              <Link href="#why">Why Us</Link>
-              {/* <Link href="#">Careers</Link>
-               <Link href="#">Privacy</Link> */}
-            </div>
-          </div>
+    {/* Newsletter */}
+    <div>
+      <div className="font-semibold mb-3">Newsletter</div>
+      <div className="text-sm text-white/70">
+        Get product updates, case studies and engineering insights.
+      </div>
+      <form className="mt-3 flex flex-col sm:flex-row gap-2">
+        <input
+          type="email"
+          placeholder="you@company.com"
+          className="flex-1 rounded px-3 py-2 bg-white/10 border border-white/20 outline-none text-sm"
+        />
+        <button
+          type="submit"
+          className="px-4 py-2 rounded bg-[var(--cignum-blue)] text-white text-sm font-medium hover:opacity-90 transition"
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </div>
 
-          <div>
-            <div className="font-semibold mb-2">Newsletter</div>
-            <div className="text-sm text-white/70">
-              Get product updates, case studies and engineering insights.
-            </div>
-            <div className="mt-3 flex gap-2">
-              <input
-                placeholder="you@company.com"
-                className="flex-1 rounded px-3 py-2 bg-white/6 border border-white/8 outline-none"
-              />
-              <button className="px-4 py-2 rounded bg-[var(--cignum-blue)]">
-                Subscribe
-              </button>
-            </div>
-          </div>
-        </div>
+  {/* Bottom Line */}
+  <div className="mt-6 text-center text-white/50 text-sm">
+    © {new Date().getFullYear()} Cignum Solutions. All rights reserved.
+  </div>
+</footer>
 
-        <div className="mt-6 text-center text-white/50 text-sm">
-          © {new Date().getFullYear()} Cignum Solutions. All rights reserved.
-        </div>
-      </footer>
     </div>
   );
 }
