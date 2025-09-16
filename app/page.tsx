@@ -57,7 +57,7 @@
 //     },
 //     {
 //       title: "Fintech Solutions",
-//       desc: "Payments, lending, remittances, digital banking & compliance.",
+//       desc: "Payments, lending, cross border payment, digital banking & compliance.",
 //     },
 //     {
 //       title: "Marketing Tech",
@@ -409,7 +409,7 @@
 //           <div className="bg-white/4 p-6 rounded-xl border border-white/6">
 //             <div className="font-semibold">Case Snapshot</div>
 //             <div className="text-sm text-white/70 mt-3">
-//               Transvault implemented a secure remittance pipeline with
+//               Transvault implemented a secure cross border payment pipeline with
 //               end-to-end encryption, reducing settlement time by 43% while
 //               improving compliance reporting.
 //             </div>
@@ -529,7 +529,7 @@ export default function CignumOnePager() {
     },
     {
       title: "Fintech Solutions",
-      desc: "Payments, lending, remittances, digital banking & compliance.",
+      desc: "Payments, lending, cross border payment, digital banking & compliance.",
     },
     {
       title: "Marketing Tech",
@@ -822,7 +822,7 @@ export default function CignumOnePager() {
           {/* <div className="bg-white/4 p-6 rounded-xl border border-white/6">
             <div className="font-semibold">Case Snapshot</div>
             <div className="text-sm text-white/70 mt-3">
-              Transvault implemented a secure remittance pipeline with
+              Transvault implemented a secure cross border payment pipeline with
               end-to-end encryption, reducing settlement time by 43% while
               improving compliance reporting.
             </div>
